@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: 50px;
+	color: #fafafa;
+	font-family: raleway-c;
+	overflow-x: hidden;
+}
+.footer {
+	padding: calc(var(--index) * 8) 0;
+	font-family: raleway-c;
+    padding: 9px;
+	top: 905px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.link{
+    background-color: #0a0a0a;
+}
+.link-nav{
+    height: 7vh; /* Высота меню */
+  	width: 100%; /* Ширина на всю ширину экрана */
+  	position: fixed; /* Фиксированное положение */
+  	bottom: 0; /* Прикрепляем к нижней части экрана */
+  	left: 0; /* Положение слева */
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-around;
+  	z-index: 999; /* Устанавливаем z-index, чтобы элемент был поверх других элементов на странице */
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: #ffffff;
+}
+a:hover:after{
+    width: 100%;
+}
+
+.price {
+	color: black;
+	font-size: 22px;
+}
+.card1 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 15px;
+	margin-top: 60px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card2 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 333px;
+	margin-top: -380px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card3 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 650px;
+	margin-top: -697px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card4 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 969px;
+	margin-top: -1015px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card5 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 1289px;
+	margin-top: -364px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card6 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 1610px;
+	margin-top: -364px;
+	text-align: center;
+	font-family: outfit-c;
+}
+
+.card7 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 15px;
+	margin-top: 60px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card8 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 333px;
+	margin-top: -380px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card9 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin: 650px;
+	margin-top: -737px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card10 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 969px;
+	margin-top: -1015px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card11 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 1289px;
+	margin-top: -364px;
+	text-align: center;
+	font-family: outfit-c;
+}
+.card12 {
+	justify-content: space-around;
+	box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.9);
+	background-color: white;
+	color: black;
+	max-width: 300px;
+	margin-left: 1610px;
+	margin-top: -364px;
+	text-align: center;
+	font-family: outfit-c;
+}
